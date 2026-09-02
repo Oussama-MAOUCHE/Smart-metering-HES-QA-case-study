@@ -1,6 +1,6 @@
 # Representative Test Case — SCI-11
 
-> Sanitized public reconstruction based on the original 2022 TestLink case and execution record. The scenario, Expected behavior, execution result, and observed outcome are preserved; operational identifiers and raw product screenshots are omitted.
+> Sanitized public version based on the original TestLink case and execution record. The scenario, Expected behavior, execution result, and observed outcome are preserved; operational identifiers and raw product screenshots are omitted.
 
 ## Test definition
 
@@ -19,7 +19,7 @@
 
 All device input fields are left blank.
 
-The historical DC identifier is intentionally omitted from the public reconstruction.
+The original DC identifier is intentionally omitted from the public version.
 
 ### Step and Expected Result
 
