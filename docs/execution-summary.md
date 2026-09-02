@@ -2,9 +2,9 @@
 
 ## Scope
 
-This summary covers the targeted HES device/meter-creation suite documented in the TestLink execution evidence.
+This summary covers the focused HES device/meter-creation suite executed and recorded in TestLink.
 
-The source set contains **12 executed cases**. The numbering is `SCI-1` and `SCI-3` through `SCI-13`; `SCI-2` was skipped in the original numbering and is not treated as a missing or assumed case.
+The suite contains **12 executed cases**. The numbering is `SCI-1` and `SCI-3` through `SCI-13`; `SCI-2` was skipped in the original numbering and is not treated as a missing or assumed case.
 
 ## Result overview
 
@@ -16,11 +16,11 @@ The source set contains **12 executed cases**. The numbering is `SCI-1` and `SCI
 | Not Run | 0 |
 | **Total** | **12** |
 
-The pass/fail distribution applies only to this targeted suite. It must not be interpreted as a product-wide HES quality score.
+The pass/fail distribution applies only to this focused suite. It is not a quality score for the complete HES product.
 
 ## Sanitized case matrix
 
-| ID | Scenario | Result | Evidence-backed observation |
+| ID | Scenario | Result | Observed behavior |
 |---|---|---|---|
 | SCI-1 | Open the New Device window through the HES device/DC hierarchy | Passed | Required navigation and window access worked. |
 | SCI-3 | Create a meter with complete, apparently valid information | Failed | The device was added, but the displayed list did not allow reliable verification of the entered values and showed different or insufficient information. |
@@ -55,7 +55,7 @@ SCI-12 showed that a meter created as Out of Service could not be distinguished 
 
 ### Save-path stability
 
-SCI-10 and SCI-13 were blocked by unhandled database exceptions. The evidence supports an error-handling/stability concern; it does not establish a specific root cause or security vulnerability.
+SCI-10 and SCI-13 were blocked by unhandled database exceptions. These results support an error-handling and stability concern; they do not establish a specific root cause or security vulnerability.
 
 ### Protective validation behavior
 
@@ -63,9 +63,9 @@ SCI-9 passed because invalid Device ID characters could not be entered.
 
 ## Lifecycle boundary
 
-The observations were communicated internally. The available evidence does not show a formal defect-tracking workflow, implemented fixes, retesting, regression, or release closure.
+The findings were communicated internally. The records reviewed for this portfolio do not document a later fix, retest, regression, or release-closure cycle.
 
-The initial exploratory and functional test phase was paused before broader execution because continued application access was not available.
+The test phase was paused before broader execution because continued application access was not available.
 
 ## Related material
 
