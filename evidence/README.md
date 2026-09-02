@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is built from surviving historical QA evidence. The goal is to show the testing method, execution result, and professional reasoning without publishing internal product material that is unnecessary for a public portfolio.
+This repository presents selected QA evidence from the HES testing work. The goal is to show the testing method, execution result, and professional reasoning without publishing internal product material that is unnecessary for a public portfolio.
 
 ## Private evidence available
 
@@ -32,11 +32,11 @@ The repository excludes raw material that could expose internal or operational i
 - database implementation details;
 - unreviewed internal emails or source documents.
 
-The complete raw TestLink archive is also excluded because it contains internal data, duplicate material, screenshots, logs, and historical template content that does not add enough public value to justify the exposure.
+The complete raw TestLink material is also excluded because it contains internal data, duplicate material, screenshots, logs, and template content that does not add enough public value to justify the exposure.
 
-## Public reconstruction rule
+## Public evidence rule
 
-Public evidence is recreated or sanitized from the historical source while preserving the facts that matter:
+Public material is sanitized and summarized from the source records while preserving the facts that matter:
 
 - scenario and test intent;
 - Expected behavior;
@@ -44,7 +44,7 @@ Public evidence is recreated or sanitized from the historical source while prese
 - execution result;
 - scope and limitations.
 
-No new execution, requirement, root cause, fix, retest, regression, or business outcome is introduced during reconstruction.
+No new execution, requirement, root cause, fix, retest, regression, or business outcome is introduced in the public version.
 
 ## Representative case
 
