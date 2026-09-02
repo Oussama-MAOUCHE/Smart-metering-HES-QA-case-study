@@ -21,7 +21,7 @@ The executed scope focused on creating meter/device records under an existing da
 - Blank-field and invalid-input validation.
 - Post-save data visibility.
 - Out-of-Service state visibility.
-- DC reassignment behavior.
+- DC-number change during device creation.
 - Selected UI-to-database persistence comparisons using SQL Server.
 
 ### Out of scope for this case study
@@ -41,7 +41,7 @@ There was no approved client requirements baseline, completed cahier des charges
 
 Expected behavior was therefore based on:
 
-- explanations available from developers;
+- limited explanations available from developers;
 - smart-metering domain knowledge;
 - reasonable input-validation expectations;
 - observable consistency between entered data, displayed data, and stored data.
@@ -57,7 +57,7 @@ The work followed this progression:
 3. Execute the cases manually against the HES application.
 4. Record Expected and Actual behavior in the execution evidence.
 5. Use SQL Server for selected persistence comparisons after data entry through HES.
-6. Review the observations by visible behavior and user/data impact.
+6. Review the recorded observations and execution results.
 7. Communicate the identified issues internally.
 
 The 12 executed cases resulted in **2 Passed, 8 Failed, and 2 Blocked**.
