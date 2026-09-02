@@ -2,9 +2,9 @@
 
 ## Scope
 
-This summary covers the targeted HES device/meter-creation suite preserved in the historical TestLink evidence.
+This summary covers the targeted HES device/meter-creation suite documented in the TestLink execution evidence.
 
-The archive contains **12 executed cases**. The numbering is `SCI-1` and `SCI-3` through `SCI-13`; `SCI-2` was skipped in the historical numbering and is not treated as a missing or assumed case.
+The source set contains **12 executed cases**. The numbering is `SCI-1` and `SCI-3` through `SCI-13`; `SCI-2` was skipped in the original numbering and is not treated as a missing or assumed case.
 
 ## Result overview
 
@@ -63,7 +63,7 @@ SCI-9 passed because invalid Device ID characters could not be entered.
 
 ## Lifecycle boundary
 
-The observations were communicated internally. The surviving material does not show a formal defect-tracking workflow, implemented fixes, retesting, regression, or release closure.
+The observations were communicated internally. The available evidence does not show a formal defect-tracking workflow, implemented fixes, retesting, regression, or release closure.
 
 The initial exploratory and functional test phase was paused before broader execution because continued application access was not available.
 
