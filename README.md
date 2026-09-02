@@ -25,7 +25,7 @@ This case study covers only the **HES device-management area** that I tested. MD
 
 ## My contribution
 
-- Developed and iteratively refined a test plan for the HES testing scope.
+- Developed and refined a preliminary test plan for the HES testing scope.
 - Authored and executed 12 manual test cases in TestLink.
 - Began with exploratory testing, then formalized repeatable positive, negative, validation, data-consistency, and state-oriented scenarios.
 - Used SQL Server as a secondary verification point to compare HES input with persistence outcomes.
@@ -44,7 +44,7 @@ The test scope concentrated on risks around device identity, validation, persist
 - invalid Device ID and MAC input;
 - empty-record submission;
 - Out-of-Service state representation;
-- DC reassignment;
+- DC-number change during device creation;
 - comparison of HES input with database persistence outcomes.
 
 The detailed approach and scope boundaries are documented in [Test Approach](docs/test-approach.md).
@@ -102,7 +102,7 @@ Out of scope for this case study: MDM execution, product-wide testing, formal pe
 
 ## Evidence and confidentiality
 
-Private supporting material includes TestLink cases and execution reports, screenshots, metrics, a test plan, exception records, system-context documentation, and an internal testing presentation.
+Private supporting material includes TestLink cases and execution reports, screenshots, metrics, a preliminary test plan, exception records, system-context documentation, and an internal testing presentation.
 
 For confidentiality, raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public material is sanitized or summarized while preserving the facts needed to understand the testing work.
 
