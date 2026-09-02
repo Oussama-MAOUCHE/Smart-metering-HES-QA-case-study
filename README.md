@@ -1,41 +1,41 @@
 # Industrial Smart-Metering HES QA
 
-Manual QA case study based on work performed at **SAIEG — Sonelgaz Group** on an industrial smart-metering project. The portfolio focuses on a targeted test slice of the Head End System (HES) administration application: creating and validating meter/device records under a data concentrator.
+Manual QA case study from an industrial smart-metering project at **SAIEG — Sonelgaz Group**. I tested a focused area of the Head End System (HES) administration application: creating and validating meter/device records under a data concentrator.
 
 ## At a glance
 
-| Area | Evidence-backed scope |
+| Area | Project scope |
 |---|---|
 | System tested | HES administration application |
-| Tested workflow | Device/meter creation under a data concentrator |
+| Test focus | Device/meter creation under a data concentrator |
 | Test management | TestLink |
-| Execution | Manual |
+| Testing | Manual functional and exploratory testing |
 | Platform | Windows Server 2016 |
-| Database | SQL Server |
+| Database validation | Selected SQL Server persistence checks |
 | Executed cases | 12 |
 | Results | 2 Passed · 8 Failed · 2 Blocked |
 
-These results describe only the targeted 12-case suite. They are not a product-wide quality score.
+These results apply to this focused suite, not the entire HES product.
 
 ## System context
 
-The wider SCI smart-metering solution included meters, data concentrators, HES, and Meter Data Management (MDM). HES and MDM were separate but complementary systems: HES collected and extracted information from data concentrators, while MDM was intended to process information received through HES for downstream metering functions.
+The wider smart-metering solution included meters, data concentrators, HES, and Meter Data Management (MDM). HES and MDM were separate but complementary systems: HES collected and extracted information from data concentrators, while MDM was intended to process information received through HES for downstream metering functions.
 
-The available execution evidence supports testing of the **HES device-management area only**. MDM is included here for architectural context and is not presented as executed test scope.
+This case study covers only the **HES device-management area** that I tested. MDM is included only to explain the wider system context.
 
 ## My contribution
 
-- Developed and iteratively refined a preliminary HES test plan.
-- Authored and executed 12 manual cases in TestLink.
-- Began with exploratory testing and then formalized repeatable positive, negative, validation, data-consistency, and state-oriented scenarios.
+- Developed and iteratively refined a test plan for the HES testing scope.
+- Authored and executed 12 manual test cases in TestLink.
+- Began with exploratory testing, then formalized repeatable positive, negative, validation, data-consistency, and state-oriented scenarios.
 - Used SQL Server as a secondary verification point to compare HES input with persistence outcomes.
-- Recorded expected and actual behavior through TestLink execution notes, screenshots, reports, and metrics.
+- Recorded Expected and Actual behavior through TestLink execution notes, screenshots, reports, and metrics.
 - Communicated identified issues internally through the company email channel.
 - Prepared and delivered an introductory presentation on software testing and TestLink to a multidisciplinary internal audience.
 
 ## Test focus
 
-The initial slice concentrated on risks around device identity, validation, persistence, and state visibility:
+The test scope concentrated on risks around device identity, validation, persistence, and state visibility:
 
 - access to the device-creation workflow;
 - creation with complete information;
@@ -47,7 +47,7 @@ The initial slice concentrated on risks around device identity, validation, pers
 - DC reassignment;
 - comparison of HES input with database persistence outcomes.
 
-The detailed rationale and scope boundaries are documented in [Test Approach](docs/test-approach.md).
+The detailed approach and scope boundaries are documented in [Test Approach](docs/test-approach.md).
 
 ## Execution result
 
@@ -90,20 +90,20 @@ One negative case passed because invalid characters could not be entered in the 
 
 SQL Server was used as a secondary verification point after entering data through HES to check whether values were stored correctly, missing, or persisted differently from the UI input.
 
-The available evidence confirms the database technology and contains database-related application exceptions, but it does not include the original SQL queries, table names, database screenshots, or a repeatable query procedure. Those details are therefore not added to this portfolio.
+The original SQL queries, table names, and database screenshots are not included in the material reviewed for this portfolio, so they are not recreated here.
 
 ## Outcome and limitations
 
-The targeted test slice surfaced risks in validation, duplicate control, post-save data visibility, operational-state visibility, and save-path stability.
+The executed cases identified issues and risks in validation, duplicate control, post-save data visibility, operational-state visibility, and save-path stability.
 
-The initial exploratory and functional test phase was paused before broader execution because continued application access was not available. Findings had already been communicated internally, but the available evidence does not show a controlled fix, retest, regression, or release-closure cycle. No issue-resolution claim is made here.
+The test phase was paused before broader execution because continued application access was not available. The findings had already been communicated internally. The records reviewed for this portfolio do not document a later fix/retest cycle, so this case study stops at the observed execution results.
 
-The represented scope does not include MDM execution, product-wide testing, formal performance testing, formal security testing, compliance testing, or a completed test campaign.
+Out of scope for this case study: MDM execution, product-wide testing, formal performance testing, formal security testing, compliance testing, and release closure.
 
 ## Evidence and confidentiality
 
-The private evidence set includes TestLink cases and execution reports, screenshots, metrics, a preliminary test plan, exception records, system-context documentation, and an internal testing presentation.
+Private supporting material includes TestLink cases and execution reports, screenshots, metrics, a test plan, exception records, system-context documentation, and an internal testing presentation.
 
-Raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public supporting material is sanitized or summarized to preserve the QA evidence without exposing internal product information.
+For confidentiality, raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public material is sanitized or summarized while preserving the facts needed to understand the testing work.
 
 See the [Evidence Policy](evidence/README.md) and the sanitized [Representative Test Case — SCI-11](evidence/representative-test-case.md).
