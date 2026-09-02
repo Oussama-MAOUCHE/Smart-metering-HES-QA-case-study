@@ -1,8 +1,6 @@
 # Industrial Smart-Metering HES QA
 
-Historical manual QA case study based on work performed at **SAIEG — Sonelgaz Group** on an industrial smart-metering project. The portfolio focuses on a targeted test slice of the Head End System (HES) administration application: creating and validating meter/device records under a data concentrator.
-
-> Historical QA case study based on work performed in 2022. Portfolio documentation reconstructed from surviving evidence in 2026.
+Manual QA case study based on work performed at **SAIEG — Sonelgaz Group** on an industrial smart-metering project. The portfolio focuses on a targeted test slice of the Head End System (HES) administration application: creating and validating meter/device records under a data concentrator.
 
 ## At a glance
 
@@ -23,7 +21,7 @@ These results describe only the targeted 12-case suite. They are not a product-w
 
 The wider SCI smart-metering solution included meters, data concentrators, HES, and Meter Data Management (MDM). HES and MDM were separate but complementary systems: HES collected and extracted information from data concentrators, while MDM was intended to process information received through HES for downstream metering functions.
 
-The surviving execution evidence supports testing of the **HES device-management area only**. MDM is included here for architectural context and is not presented as executed test scope.
+The available execution evidence supports testing of the **HES device-management area only**. MDM is included here for architectural context and is not presented as executed test scope.
 
 ## My contribution
 
@@ -92,13 +90,13 @@ One negative case passed because invalid characters could not be entered in the 
 
 SQL Server was used as a secondary verification point after entering data through HES to check whether values were stored correctly, missing, or persisted differently from the UI input.
 
-The surviving evidence confirms the database technology and contains database-related application exceptions, but it does not preserve the original SQL queries, table names, database screenshots, or a repeatable query procedure. Those details are therefore not reconstructed in this portfolio.
+The available evidence confirms the database technology and contains database-related application exceptions, but it does not include the original SQL queries, table names, database screenshots, or a repeatable query procedure. Those details are therefore not added to this portfolio.
 
 ## Outcome and limitations
 
 The targeted test slice surfaced risks in validation, duplicate control, post-save data visibility, operational-state visibility, and save-path stability.
 
-The initial exploratory and functional test phase was paused before broader execution because continued application access was not available. Findings had already been communicated internally, but the surviving evidence does not show a controlled fix, retest, regression, or release-closure cycle. No issue-resolution claim is made here.
+The initial exploratory and functional test phase was paused before broader execution because continued application access was not available. Findings had already been communicated internally, but the available evidence does not show a controlled fix, retest, regression, or release-closure cycle. No issue-resolution claim is made here.
 
 The represented scope does not include MDM execution, product-wide testing, formal performance testing, formal security testing, compliance testing, or a completed test campaign.
 
@@ -106,6 +104,6 @@ The represented scope does not include MDM execution, product-wide testing, form
 
 The private evidence set includes TestLink cases and execution reports, screenshots, metrics, a preliminary test plan, exception records, system-context documentation, and an internal testing presentation.
 
-Raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public supporting material is recreated or sanitized to preserve the QA evidence without exposing internal product information.
+Raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public supporting material is sanitized or summarized to preserve the QA evidence without exposing internal product information.
 
 See the [Evidence Policy](evidence/README.md) and the sanitized [Representative Test Case — SCI-11](evidence/representative-test-case.md).
