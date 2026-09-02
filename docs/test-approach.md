@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document explains the approach used for the targeted HES device-creation test slice represented in this portfolio. It describes the work supported by the surviving evidence without presenting the historical activity as a complete or formally approved test campaign.
+This document explains the approach used for the targeted HES device-creation test slice represented in this portfolio. It describes the work supported by the available evidence without presenting the activity as a complete or formally approved test campaign.
 
 ## Objective
 
@@ -60,7 +60,7 @@ The work followed a practical progression:
 6. Group the observations by their visible behavior and user/data impact.
 7. Communicate the identified issues internally.
 
-The surviving material records **12 executed cases: 2 Passed, 8 Failed, and 2 Blocked**.
+The available records show **12 executed cases: 2 Passed, 8 Failed, and 2 Blocked**.
 
 ## Risk areas covered
 
@@ -92,13 +92,13 @@ Two scenarios were blocked by unhandled database exceptions during save operatio
 
 SQL Server served as a secondary verification point after values were entered through HES. The purpose was to determine whether information had been stored correctly, not stored, or stored differently from the UI input.
 
-The surviving archive does not contain the historical SQL queries, table names, database screenshots, or a repeatable query procedure. The portfolio therefore records the verification purpose without inventing technical details that no longer survive.
+The reviewed evidence does not contain the original SQL queries, table names, database screenshots, or a repeatable query procedure. The portfolio therefore records the verification purpose without inventing technical details that are not supported by the available source material.
 
 ## Stopping point
 
 The initial exploratory and functional test phase was paused before broader execution because continued application access was not available.
 
-The identified issues had been shared internally, but the supplied evidence does not establish later fixes, retesting, regression, or release closure. Those activities are not claimed.
+The identified issues had been shared internally, but the available evidence does not establish later fixes, retesting, regression, or release closure. Those activities are not claimed.
 
 ## Related material
 
