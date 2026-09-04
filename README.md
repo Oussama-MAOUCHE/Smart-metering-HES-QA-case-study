@@ -11,7 +11,6 @@ Manual QA case study from an industrial smart-metering project at **SAIEG — So
 | Test management | TestLink |
 | Testing | Manual functional and exploratory testing |
 | Platform | Windows Server 2016 |
-| Database validation | Selected SQL Server persistence checks |
 | Executed cases | 12 |
 | Results | 2 Passed · 8 Failed · 2 Blocked |
 
@@ -28,14 +27,13 @@ This case study covers only the **HES device-management area** that I tested. MD
 - Developed and refined a preliminary test plan for the HES testing scope.
 - Authored and executed 12 manual test cases in TestLink.
 - Began with exploratory testing, then formalized repeatable positive, negative, validation, data-consistency, and state-oriented scenarios.
-- Used SQL Server as a secondary verification point to compare HES input with persistence outcomes.
 - Recorded Expected and Actual behavior through TestLink execution notes, screenshots, reports, and metrics.
-- Communicated identified issues internally through the company email channel.
+- Reported test execution results and identified issues to the project team through internal email.
 - Prepared and delivered an introductory presentation on software testing and TestLink to a multidisciplinary internal audience.
 
 ## Test focus
 
-The test scope concentrated on risks around device identity, validation, persistence, and state visibility:
+The test scope concentrated on risks around device identity, validation, post-save visibility, and state representation:
 
 - access to the device-creation workflow;
 - creation with complete information;
@@ -44,8 +42,7 @@ The test scope concentrated on risks around device identity, validation, persist
 - invalid Device ID and MAC input;
 - empty-record submission;
 - Out-of-Service state representation;
-- DC-number change during device creation;
-- comparison of HES input with database persistence outcomes.
+- DC-number change during device creation.
 
 The detailed approach and scope boundaries are documented in [Test Approach](docs/test-approach.md).
 
@@ -86,24 +83,18 @@ Malformed MAC data and a DC-number change triggered unhandled database exception
 
 One negative case passed because invalid characters could not be entered in the Device ID field.
 
-## Database validation
-
-SQL Server was used as a secondary verification point after entering data through HES to check whether values were stored correctly, missing, or persisted differently from the UI input.
-
-The original SQL queries, table names, and database screenshots are not included in the material reviewed for this portfolio, so they are not recreated here.
-
 ## Outcome and limitations
 
 The executed cases identified issues and risks in validation, duplicate control, post-save data visibility, operational-state visibility, and save-path stability.
 
 The test phase was paused before broader execution because continued application access was not available. The findings had already been communicated internally. The records reviewed for this portfolio do not document a later fix/retest cycle, so this case study stops at the observed execution results.
 
-Out of scope for this case study: MDM execution, product-wide testing, formal performance testing, formal security testing, compliance testing, and release closure.
+Out of scope for this case study: MDM testing, product-wide testing, database-side testing or validation, formal performance testing, formal security testing, compliance testing, regression, fix verification, retesting, and release closure.
 
 ## Evidence and confidentiality
 
-Private supporting material includes TestLink cases and execution reports, screenshots, metrics, a preliminary test plan, exception records, system-context documentation, and an internal testing presentation.
+Private supporting material includes TestLink cases and execution reports, screenshots, metrics, a preliminary test plan, exception records, system-context documentation, internal execution-report emails, and an internal testing presentation.
 
-For confidentiality, raw application screenshots, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public material is sanitized or summarized while preserving the facts needed to understand the testing work.
+For confidentiality, raw application screenshots, raw internal emails, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public material is sanitized or summarized while preserving the facts needed to understand the testing work.
 
 See the [Evidence Policy](evidence/README.md) and the sanitized [Representative Test Case — SCI-11](evidence/representative-test-case.md).
