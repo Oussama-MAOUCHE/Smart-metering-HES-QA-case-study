@@ -97,4 +97,4 @@ Private supporting material includes TestLink cases and execution reports, scree
 
 For confidentiality, raw application screenshots, raw internal emails, operational identifiers, usernames, stack traces, internal paths, and database implementation details are not published. Public material is sanitized or summarized while preserving the facts needed to understand the testing work.
 
-See the [Evidence Policy](evidence/README.md) and the sanitized [Representative Test Case — SCI-11](evidence/representative-test-case.md).
+See the [Evidence Policy](evidence/README.md) and the sanitized [Representative Test Cases — SCI-11 and SCI-12](evidence/representative-test-case.md).
