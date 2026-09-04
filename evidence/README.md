@@ -13,6 +13,7 @@ The reviewed source set includes:
 - TestLink screenshots;
 - a preliminary test plan;
 - captured exception records;
+- internal execution-report emails;
 - smart-metering system-context documentation;
 - an internal presentation on software testing and TestLink.
 
@@ -30,7 +31,7 @@ The repository excludes raw material that could expose internal or operational i
 - internal file paths;
 - service or connection identifiers;
 - database implementation details;
-- unreviewed internal emails or source documents.
+- raw internal emails and source documents containing internal operational, access, product, or implementation information.
 
 The complete raw TestLink material is also excluded because it contains internal data, duplicate material, screenshots, logs, and template content that does not add enough public value to justify the exposure.
 
