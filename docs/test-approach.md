@@ -98,4 +98,4 @@ The identified issues had already been shared internally. The records reviewed f
 - [Repository overview](../README.md)
 - [Execution Summary](execution-summary.md)
 - [Evidence Policy](../evidence/README.md)
-- [Representative Test Case — SCI-11](../evidence/representative-test-case.md)
+- [Representative Test Cases — SCI-11 and SCI-12](../evidence/representative-test-case.md)
