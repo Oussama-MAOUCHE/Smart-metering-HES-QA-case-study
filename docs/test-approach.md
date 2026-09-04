@@ -22,13 +22,13 @@ The executed scope focused on creating meter/device records under an existing da
 - Post-save data visibility.
 - Out-of-Service state visibility.
 - DC-number change during device creation.
-- Selected UI-to-database persistence comparisons using SQL Server.
 
 ### Out of scope for this case study
 
 - MDM testing.
 - Every HES module.
 - A complete end-to-end smart-metering campaign.
+- Database-side testing or validation.
 - Formal performance or endurance testing.
 - Formal security or penetration testing.
 - Compliance testing.
@@ -44,7 +44,7 @@ Expected behavior was therefore based on:
 - limited explanations available from developers;
 - smart-metering domain knowledge;
 - reasonable input-validation expectations;
-- observable consistency between entered data, displayed data, and stored data.
+- observable consistency between entered data and displayed data.
 
 The findings are presented as observed product risks or deviations from reasonable validation and data-consistency expectations, not as violations of formally approved requirements.
 
@@ -56,9 +56,8 @@ The work followed this progression:
 2. Convert repeatable scenarios into TestLink test cases.
 3. Execute the cases manually against the HES application.
 4. Record Expected and Actual behavior in the execution evidence.
-5. Use SQL Server for selected persistence comparisons after data entry through HES.
-6. Review the recorded observations and execution results.
-7. Communicate the identified issues internally.
+5. Review the recorded observations and execution results.
+6. Report test execution results and identified issues to the project team through internal email.
 
 The 12 executed cases resulted in **2 Passed, 8 Failed, and 2 Blocked**.
 
@@ -78,7 +77,7 @@ The suite included invalid Device ID characters and malformed MAC data.
 
 ### Data visibility and consistency
 
-The work checked whether entered values could be verified after creation. SQL Server was also used for selected persistence comparisons.
+The work checked whether entered values could be verified after creation.
 
 ### Operational state
 
@@ -87,12 +86,6 @@ A dedicated case checked whether an Out-of-Service device could be distinguished
 ### Save-path stability
 
 Two scenarios were blocked by unhandled database exceptions during save operations.
-
-## SQL Server checks
-
-SQL Server served as a secondary verification point after values were entered through HES. The purpose was to check whether information had been stored correctly, was missing, or differed from the UI input.
-
-The original SQL queries, table names, and database screenshots are not included in the material reviewed for this portfolio, so no query procedure is recreated.
 
 ## Stopping point
 
