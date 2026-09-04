@@ -37,7 +37,7 @@ The original data-concentrator identifier is intentionally omitted from the publ
 
 ### Interpretation
 
-No approved requirements baseline or requirement ID was linked to this case. The Expected behavior relied on a reasonable input-validation and data-integrity expectation: an entirely empty device record should not be persisted as a valid meter.
+No approved requirements baseline or requirement ID was linked to this case. The Expected behavior relied on a reasonable input-validation and data-integrity expectation: an entirely empty device record should not be accepted and saved as a valid meter record.
 
 The result is presented as a validation risk supported by the observed execution, not as a violation of a formally approved requirement.
 
