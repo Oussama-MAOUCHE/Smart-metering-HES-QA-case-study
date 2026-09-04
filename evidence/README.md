@@ -47,15 +47,16 @@ Public material is sanitized and summarized from the source records while preser
 
 No new execution, requirement, root cause, fix, retest, regression, or business outcome is introduced in the public version.
 
-## Representative case
+## Representative cases
 
-The repository includes one sanitized case:
+The repository includes two sanitized examples from the 12-case suite:
 
-**SCI-11 — Create a meter with all input fields blank**
+- **SCI-11 — Create a meter with all input fields blank**: negative input validation and empty-record handling.
+- **SCI-12 — Create a meter marked Out of Service**: multi-step device creation and post-save operational-state visibility.
 
-It was selected because it is understandable without deep smart-metering knowledge, demonstrates a negative validation scenario, has a clear Expected/Actual contrast, and can be shown without exposing raw product imagery or exception details.
+The two cases were selected because they show different parts of the test approach without exposing raw product material. They are representative examples, not a substitute for the complete sanitized execution matrix.
 
-See [Representative Test Case — SCI-11](representative-test-case.md).
+See [Representative Test Cases — SCI-11 and SCI-12](representative-test-case.md).
 
 ## Evidence boundary
 
