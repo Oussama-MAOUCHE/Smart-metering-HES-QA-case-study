@@ -72,4 +72,4 @@ The test phase was paused before broader execution because continued application
 - [Repository overview](../README.md)
 - [Test Approach](test-approach.md)
 - [Evidence Policy](../evidence/README.md)
-- [Representative Test Case — SCI-11](../evidence/representative-test-case.md)
+- [Representative Test Cases — SCI-11 and SCI-12](../evidence/representative-test-case.md)
